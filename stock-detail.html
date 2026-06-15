@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — 3. Stock Detail Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-switcher">
+  <div class="wrap">
+    <a href="index.html">1. Landing</a>
+    <a href="dashboard.html">2. Dashboard</a>
+    <a href="stock-detail.html" class="active">3. Stock Detail</a>
+    <a href="screener.html">4. Screener</a>
+    <a href="portfolio.html">5. Portfolio</a>
+    <a href="settings.html">6. Settings</a>
+    <a href="tracker.html">Live Tracker</a>
+  </div>
+</div>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#">Watchlists</a></li>
+        <li><a href="screener.html">Screener</a></li>
+        <li><a href="#" class="active">Stocks</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <div class="search-ph placeholder short">Search Bar Placeholder</div>
+      <div class="app-topbar-right">
+        <div class="icon-circle">Bell</div>
+        <div class="icon-circle">User</div>
+      </div>
+    </div>
+
+    <div class="app-content">
+
+      <!-- ===================== STOCK HEADER ===================== -->
+      <section class="stock-header box">
+        <div class="stock-id">
+          <div class="label" style="margin:0;">Company Name Placeholder</div>
+          <div class="badge">TICKER</div>
+        </div>
+        <div class="stock-id">
+          <div class="value-ph" style="font-size:18px; font-weight:700;">$ Current Price</div>
+          <div class="badge up">Daily Change Badge +X.XX%</div>
+        </div>
+      </section>
+
+      <!-- ===================== CHART AREA ===================== -->
+      <section class="box">
+        <div class="time-range-row" style="margin-bottom: var(--space-2);">
+          <div class="label" style="margin:0; align-self:center;">Time Range:</div>
+          <a href="#" class="btn active">1D</a>
+          <a href="#" class="btn">1W</a>
+          <a href="#" class="btn">1M</a>
+          <a href="#" class="btn">3M</a>
+          <a href="#" class="btn">1Y</a>
+          <a href="#" class="btn">All</a>
+        </div>
+        <div class="placeholder xtall">Large Interactive Chart Placeholder</div>
+        <div class="indicator-row" style="margin-top: var(--space-2);">
+          <div class="label" style="margin:0; align-self:center;">Indicators:</div>
+          <div class="placeholder short" style="min-width:90px;">Toggle</div>
+          <div class="placeholder short" style="min-width:90px;">Toggle</div>
+          <div class="placeholder short" style="min-width:120px;">Dropdown ▾</div>
+        </div>
+      </section>
+
+      <!-- ===================== METRICS CARDS ===================== -->
+      <section class="metrics-row">
+        <div class="metric-card">
+          <div class="label">Market Cap</div>
+          <div class="value-ph">Metric Placeholder</div>
+        </div>
+        <div class="metric-card">
+          <div class="label">PE Ratio</div>
+          <div class="value-ph">Metric Placeholder</div>
+        </div>
+        <div class="metric-card">
+          <div class="label">EPS</div>
+          <div class="value-ph">Metric Placeholder</div>
+        </div>
+        <div class="metric-card">
+          <div class="label">Dividend Yield</div>
+          <div class="value-ph">Metric Placeholder</div>
+        </div>
+      </section>
+
+      <!-- ===================== FINANCIAL STATEMENTS ===================== -->
+      <section class="box">
+        <div class="label">Financial Statements Panel — Table Placeholder</div>
+        <div class="fin-table-row header">
+          <div>Line Item</div><div>Period 1</div><div>Period 2</div><div>Period 3</div><div>Period 4</div>
+        </div>
+        <div class="fin-table-row"><div>Income Statement</div><div>—</div><div>—</div><div>—</div><div>—</div></div>
+        <div class="fin-table-row"><div>Balance Sheet</div><div>—</div><div>—</div><div>—</div><div>—</div></div>
+        <div class="fin-table-row"><div>Cash Flow</div><div>—</div><div>—</div><div>—</div><div>—</div></div>
+      </section>
+
+      <!-- ===================== ANALYST RATINGS ===================== -->
+      <section class="box">
+        <div class="label">Analyst Ratings Section</div>
+        <div class="analyst-row">
+          <div class="placeholder tall">
+            <div>
+              <div class="star-ph">★★★★☆</div>
+              <div>Star Rating Placeholder</div>
+            </div>
+          </div>
+          <div class="features-grid" style="grid-template-columns: repeat(3,1fr);">
+            <div class="placeholder short">Summary Card</div>
+            <div class="placeholder short">Summary Card</div>
+            <div class="placeholder short">Summary Card</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== NEWS SECTION ===================== -->
+      <section class="box">
+        <div class="label">News Section — Vertical Feed</div>
+        <div class="news-feed">
+          <div class="news-card">
+            <div class="placeholder news-thumb">Img</div>
+            <div class="placeholder short" style="flex:1;">News Card Placeholder</div>
+          </div>
+          <div class="news-card">
+            <div class="placeholder news-thumb">Img</div>
+            <div class="placeholder short" style="flex:1;">News Card Placeholder</div>
+          </div>
+          <div class="news-card">
+            <div class="placeholder news-thumb">Img</div>
+            <div class="placeholder short" style="flex:1;">News Card Placeholder</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== AI ANALYSIS ===================== -->
+      <section class="box">
+        <div class="label">AI Analysis Panel</div>
+        <div class="placeholder tall">AI Analysis Text Block Placeholder</div>
+      </section>
+
+      <!-- ===================== RELATED STOCKS ===================== -->
+      <section class="box">
+        <div class="label">Related Stocks — Horizontal Card List</div>
+        <div class="related-row">
+          <div class="related-card placeholder">Stock Card</div>
+          <div class="related-card placeholder">Stock Card</div>
+          <div class="related-card placeholder">Stock Card</div>
+          <div class="related-card placeholder">Stock Card</div>
+          <div class="related-card placeholder">Stock Card</div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div id="bp-indicator" class="bp-indicator"></div>
+<script src="wireframe.js"></script>
+</body>
+</html>

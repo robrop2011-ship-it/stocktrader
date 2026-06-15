@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — 6. User Settings Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-switcher">
+  <div class="wrap">
+    <a href="index.html">1. Landing</a>
+    <a href="dashboard.html">2. Dashboard</a>
+    <a href="stock-detail.html">3. Stock Detail</a>
+    <a href="screener.html">4. Screener</a>
+    <a href="portfolio.html">5. Portfolio</a>
+    <a href="settings.html" class="active">6. Settings</a>
+    <a href="tracker.html">Live Tracker</a>
+  </div>
+</div>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#">Watchlists</a></li>
+        <li><a href="screener.html">Screener</a></li>
+        <li><a href="stock-detail.html">Stocks</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="#" class="active">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <div class="search-ph placeholder short">Search Bar Placeholder</div>
+      <div class="app-topbar-right">
+        <div class="icon-circle">Bell</div>
+        <div class="icon-circle">User</div>
+      </div>
+    </div>
+
+    <div class="app-content">
+
+      <div class="settings-grid">
+
+        <!-- ===================== LEFT NAV ===================== -->
+        <aside class="box">
+          <div class="label">Settings Categories</div>
+          <ul class="settings-nav">
+            <li><a href="#profile" class="active">Profile Settings</a></li>
+            <li><a href="#subscription">Subscription Management</a></li>
+            <li><a href="#notifications">Notification Preferences</a></li>
+            <li><a href="#security">Security Settings</a></li>
+            <li><a href="#screeners">Saved Screeners</a></li>
+            <li><a href="#connected">Connected Accounts</a></li>
+          </ul>
+        </aside>
+
+        <!-- ===================== MAIN CONTENT ===================== -->
+        <div>
+
+          <!-- Profile Settings -->
+          <section id="profile" class="box" style="margin-bottom: var(--space-3);">
+            <div class="section-title" style="font-size:14px;">Profile Settings</div>
+            <div class="form-row">
+              <label>Name</label>
+              <div class="input-ph placeholder short">Form Placeholder</div>
+            </div>
+            <div class="form-row">
+              <label>Email</label>
+              <div class="input-ph placeholder short">Form Placeholder</div>
+            </div>
+            <div class="form-row">
+              <label>Role</label>
+              <div class="input-ph placeholder short">Form Placeholder</div>
+            </div>
+            <a href="#" class="btn btn-solid">Save Changes</a>
+          </section>
+
+          <!-- Subscription Management -->
+          <section id="subscription" class="box" style="margin-bottom: var(--space-3);">
+            <div class="section-title" style="font-size:14px;">Subscription Management</div>
+            <div class="settings-cards">
+              <div class="pricing-card">
+                <div class="label">Plan Card — Free</div>
+                <div class="price-ph">$0</div>
+                <a href="#" class="btn btn-block">Current Plan</a>
+              </div>
+              <div class="pricing-card">
+                <div class="label">Plan Card — Pro</div>
+                <div class="price-ph">$XX/mo</div>
+                <a href="#" class="btn btn-solid btn-block">Upgrade</a>
+              </div>
+              <div class="pricing-card">
+                <div class="label">Plan Card — Premium</div>
+                <div class="price-ph">$XX/mo</div>
+                <a href="#" class="btn btn-block">Upgrade</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Notification Preferences -->
+          <section id="notifications" class="box" style="margin-bottom: var(--space-3);">
+            <div class="section-title" style="font-size:14px;">Notification Preferences</div>
+            <div class="toggle-row"><span>Email Alerts</span><div class="toggle-ph"></div></div>
+            <div class="toggle-row"><span>Price Alerts</span><div class="toggle-ph"></div></div>
+            <div class="toggle-row"><span>News Digest</span><div class="toggle-ph"></div></div>
+            <div class="toggle-row"><span>Portfolio Summary</span><div class="toggle-ph"></div></div>
+            <div class="toggle-row" style="border-bottom:none;"><span>Marketing Updates</span><div class="toggle-ph"></div></div>
+          </section>
+
+          <!-- Security Settings -->
+          <section id="security" class="box" style="margin-bottom: var(--space-3);">
+            <div class="section-title" style="font-size:14px;">Security Settings</div>
+            <div class="form-row">
+              <label>Password Reset</label>
+              <div class="input-ph placeholder short">Form Placeholder</div>
+            </div>
+            <a href="#" class="btn">Reset Password</a>
+            <div class="form-row" style="margin-top: var(--space-3);">
+              <label>Two-Factor Authentication</label>
+              <div class="toggle-row"><span>Enable 2FA</span><div class="toggle-ph"></div></div>
+            </div>
+          </section>
+
+          <!-- Saved Screeners -->
+          <section id="screeners" class="box" style="margin-bottom: var(--space-3);">
+            <div class="section-title" style="font-size:14px;">Saved Screeners</div>
+            <div class="list-item-row">
+              <span>Saved Screener Placeholder</span>
+              <div class="list-item-actions">
+                <div class="icon-ph-sm">Edit</div>
+                <div class="icon-ph-sm">Del</div>
+              </div>
+            </div>
+            <div class="list-item-row">
+              <span>Saved Screener Placeholder</span>
+              <div class="list-item-actions">
+                <div class="icon-ph-sm">Edit</div>
+                <div class="icon-ph-sm">Del</div>
+              </div>
+            </div>
+            <div class="list-item-row" style="margin-bottom:0;">
+              <span>Saved Screener Placeholder</span>
+              <div class="list-item-actions">
+                <div class="icon-ph-sm">Edit</div>
+                <div class="icon-ph-sm">Del</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Connected Accounts -->
+          <section id="connected" class="box">
+            <div class="section-title" style="font-size:14px;">Connected Accounts</div>
+            <div class="settings-cards">
+              <div class="placeholder tall">External Service Card</div>
+              <div class="placeholder tall">External Service Card</div>
+              <div class="placeholder tall">External Service Card</div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="bp-indicator" class="bp-indicator"></div>
+<script src="wireframe.js"></script>
+</body>
+</html>

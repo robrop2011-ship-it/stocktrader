@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — Live Stock Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-switcher">
+  <div class="wrap">
+    <a href="index.html">1. Landing</a>
+    <a href="dashboard.html">2. Dashboard</a>
+    <a href="stock-detail.html">3. Stock Detail</a>
+    <a href="screener.html">4. Screener</a>
+    <a href="portfolio.html">5. Portfolio</a>
+    <a href="settings.html">6. Settings</a>
+    <a href="tracker.html" class="active">Live Tracker</a>
+  </div>
+</div>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#">Watchlists</a></li>
+        <li><a href="screener.html">Screener</a></li>
+        <li><a href="stock-detail.html">Stocks</a></li>
+        <li><a href="#" class="active">Live Tracker</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <input type="text" id="search-input" class="search-ph tracker-search input-ph" placeholder="Search ticker or company (e.g. AAPL, Tesla)">
+      <div class="app-topbar-right">
+        <div class="icon-circle">Bell</div>
+        <div class="icon-circle">User</div>
+      </div>
+    </div>
+
+    <div class="app-content">
+
+      <section>
+        <div class="tracker-toolbar">
+          <h2 class="section-title" style="font-size:14px; margin:0; border-bottom:none;">
+            Live Stock Tracker — Top 30 Stocks of the Day
+          </h2>
+          <div style="display:flex; align-items:center; gap: var(--space-2); font-size:12px;">
+            <span><span class="live-dot" id="live-dot"></span><span id="live-status">Live — updates every 15s</span></span>
+            <a href="#" id="toggle-live" class="btn btn-sm">Pause</a>
+            <a href="#" id="refresh-now" class="btn btn-sm">Refresh Now</a>
+          </div>
+        </div>
+        <div class="label" id="last-updated">Last updated: —</div>
+        <div class="label" id="data-source-note">Data source: —</div>
+      </section>
+
+      <section class="tracker-layout">
+
+        <!-- ===================== STOCK LIST ===================== -->
+        <div>
+          <div class="label">Select a stock to view details</div>
+          <div class="tracker-list" id="tracker-list">
+            <div class="tracker-list-item">
+              <span>Loading top 30 stocks…</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== STOCK DETAIL ===================== -->
+        <div class="tracker-detail" id="tracker-detail">
+          <div class="placeholder tall">Select a stock from the list to view live details</div>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div id="bp-indicator" class="bp-indicator"></div>
+<script src="wireframe.js"></script>
+<script src="tracker.js"></script>
+</body>
+</html>

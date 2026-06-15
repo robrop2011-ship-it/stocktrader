@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — 5. Portfolio Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-switcher">
+  <div class="wrap">
+    <a href="index.html">1. Landing</a>
+    <a href="dashboard.html">2. Dashboard</a>
+    <a href="stock-detail.html">3. Stock Detail</a>
+    <a href="screener.html">4. Screener</a>
+    <a href="portfolio.html" class="active">5. Portfolio</a>
+    <a href="settings.html">6. Settings</a>
+    <a href="tracker.html">Live Tracker</a>
+  </div>
+</div>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#" class="active">Portfolio</a></li>
+        <li><a href="#">Watchlists</a></li>
+        <li><a href="screener.html">Screener</a></li>
+        <li><a href="stock-detail.html">Stocks</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="app-main">
+    <div class="app-topbar">
+      <div class="search-ph placeholder short">Search Bar Placeholder</div>
+      <div class="app-topbar-right">
+        <div class="icon-circle">Bell</div>
+        <div class="icon-circle">User</div>
+      </div>
+    </div>
+
+    <div class="app-content">
+
+      <!-- ===================== TOP OVERVIEW ===================== -->
+      <section class="portfolio-top">
+        <div class="box">
+          <div class="label">Portfolio Value Overview</div>
+          <div class="value-ph" style="font-size:24px; font-weight:700; margin:8px 0;">Total Value Placeholder</div>
+          <div class="badge up">Daily Change Placeholder +X.XX%</div>
+        </div>
+        <div class="box">
+          <div class="label">Performance Chart</div>
+          <div class="placeholder tall">Performance Chart Placeholder</div>
+        </div>
+      </section>
+
+      <!-- ===================== HOLDINGS SECTION ===================== -->
+      <section class="box">
+        <div class="label">Holdings Table Placeholder</div>
+        <table class="results-table">
+          <thead>
+            <tr><th>Ticker</th><th>Shares</th><th>Value</th><th>Change</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ===================== ALLOCATION CHARTS ===================== -->
+      <section class="holdings-allocation">
+        <div class="box">
+          <div class="label">Holdings Table (continued reference)</div>
+          <div class="placeholder tall">Holdings Overview Placeholder</div>
+        </div>
+        <div class="box">
+          <div class="label">Asset Allocation Chart</div>
+          <div class="placeholder pie-ph">Pie Chart Wireframe</div>
+        </div>
+        <div class="box">
+          <div class="label">Sector Allocation Chart</div>
+          <div class="placeholder bar-ph">Bar Chart Wireframe</div>
+        </div>
+      </section>
+
+      <!-- ===================== ADDITIONAL PANELS ===================== -->
+      <section class="additional-panels">
+        <div class="box">
+          <div class="label">Gain / Loss Breakdown Card</div>
+          <div class="placeholder tall">Stacked Bar / Summary Placeholder</div>
+        </div>
+        <div class="box">
+          <div class="label">Recent Transactions List Placeholder</div>
+          <div class="txn-row header"><div>Date</div><div>Type</div><div>Ticker</div><div>Amount</div></div>
+          <div class="txn-row"><div>—</div><div>Buy</div><div>—</div><div>—</div></div>
+          <div class="txn-row"><div>—</div><div>Sell</div><div>—</div><div>—</div></div>
+          <div class="txn-row"><div>—</div><div>Buy</div><div>—</div><div>—</div></div>
+          <div class="txn-row"><div>—</div><div>Buy</div><div>—</div><div>—</div></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div id="bp-indicator" class="bp-indicator"></div>
+<script src="wireframe.js"></script>
+</body>
+</html>

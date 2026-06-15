@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe — 2. Dashboard Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-switcher">
+  <div class="wrap">
+    <a href="index.html">1. Landing</a>
+    <a href="dashboard.html" class="active">2. Dashboard</a>
+    <a href="stock-detail.html">3. Stock Detail</a>
+    <a href="screener.html">4. Screener</a>
+    <a href="portfolio.html">5. Portfolio</a>
+    <a href="settings.html">6. Settings</a>
+    <a href="tracker.html">Live Tracker</a>
+  </div>
+</div>
+
+<div class="app-shell">
+
+  <!-- ===================== SIDEBAR ===================== -->
+  <aside class="sidebar">
+    <div class="logo">LOGO</div>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#">Watchlists</a></li>
+        <li><a href="screener.html">Screener</a></li>
+        <li><a href="stock-detail.html">Stocks</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ===================== MAIN ===================== -->
+  <div class="app-main">
+
+    <!-- Top nav bar -->
+    <div class="app-topbar">
+      <div class="search-ph placeholder short">Search Bar Placeholder</div>
+      <div class="app-topbar-right">
+        <div class="icon-circle">Bell</div>
+        <div class="icon-circle">User</div>
+      </div>
+    </div>
+
+    <div class="app-content">
+
+      <!-- ===================== MARKET OVERVIEW ===================== -->
+      <section>
+        <h2 class="section-title" style="font-size:14px; margin-bottom:8px;">Market Overview</h2>
+        <div class="market-row">
+          <div class="market-card">
+            <div class="label">S&amp;P 500</div>
+            <div class="value-ph">Value Placeholder</div>
+            <div class="placeholder sparkline-ph">Sparkline</div>
+          </div>
+          <div class="market-card">
+            <div class="label">Nasdaq</div>
+            <div class="value-ph">Value Placeholder</div>
+            <div class="placeholder sparkline-ph">Sparkline</div>
+          </div>
+          <div class="market-card">
+            <div class="label">Dow Jones</div>
+            <div class="value-ph">Value Placeholder</div>
+            <div class="placeholder sparkline-ph">Sparkline</div>
+          </div>
+          <div class="market-card">
+            <div class="label">VIX</div>
+            <div class="value-ph">Value Placeholder</div>
+            <div class="placeholder sparkline-ph">Sparkline</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== MAIN CONTENT GRID ===================== -->
+      <section class="main-grid">
+
+        <!-- Left column -->
+        <div class="col">
+          <div class="box">
+            <div class="label">Watchlist Panel</div>
+            <div class="placeholder tall">Watchlist Panel Placeholder</div>
+          </div>
+          <div class="box">
+            <div class="label">Market Movers</div>
+            <div class="placeholder tall">Market Movers Section Placeholder</div>
+          </div>
+        </div>
+
+        <!-- Center column -->
+        <div class="col">
+          <div class="box">
+            <div class="label">Portfolio Summary</div>
+            <div class="placeholder tall">Portfolio Summary Panel Placeholder</div>
+          </div>
+          <div class="box">
+            <div class="label">News Feed</div>
+            <div class="placeholder xtall">News Feed Section Placeholder</div>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="col">
+          <div class="box">
+            <div class="label">AI Insights</div>
+            <div class="placeholder xtall">AI Insights Panel Placeholder</div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<div id="bp-indicator" class="bp-indicator"></div>
+<script src="wireframe.js"></script>
+</body>
+</html>
